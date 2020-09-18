@@ -6,10 +6,10 @@
 		let posicao_c = parseInt(numero[0]); //Centena
 		let posicao_d = parseInt(numero[0]); // Dezenas
 		let posicao_u = parseInt(numero[0]); //Unidade
-		let posicao_e = parseInt(numero[1]); //Especiais
+		let posicao_a = parseInt(numero[1]); //auxiliar
 
 		const unidades=["Zero", "Um", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito", "Nove"];
-		const especiais=["Onze", "Doze", "Treze", "Catorze", "Quinze", "Dezeseis", "Dezsete", "Dezoito", "Deznove"]; 
+		const auxiliar=["Onze", "Doze", "Treze", "Catorze", "Quinze", "Dezeseis", "Dezsete", "Dezoito", "Deznove"]; 
 		const dezenas=["Dez","Vinte", "Trinta", "Quarenta", "Cinquenta", "Sessenta", "Setenta", "Oitenta", "Noventa"];
 		const centenas=["Cem", "Duzentos", "Trezentos", "Quatrocentos", "Quinhetos", "Seiscentos","Setescentos","Oitocentos", "Novecentos"];
 
@@ -35,9 +35,9 @@
 				alert(dezenas[posicao_d-1] + "reais");
 			}
 			
-			//Imprimir Especiais
+			//Imprimir Auxiliares
 			else if (numero[0]=='1' && numero[1]=='0'||'1'||'2'||'3'||'4'||'5'||'6'||'7'||'8'||'9') {
-				alert(especiais[posicao_e-1]+ "reais");
+				alert(auxiliar[posicao_a-1]+ "reais");
 			}
 
 
